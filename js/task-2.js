@@ -45,12 +45,12 @@ function createMarkup({ url, alt }) {
   return `<li><img src="${url}" alt="${alt}"></li>`;
 }
 
-console.log(createMarkup(images));
+// console.log(createMarkup(images));
 
 function createMarkupGallery(images, callback) {
   return images.map((url, alt) => createMarkup(url, alt)).join("");
 }
 
-console.log(createMarkupGallery(images));
+// console.log(createMarkupGallery(images));
 
 refs.gallery.insertAdjacentHTML("beforeend", createMarkupGallery(images));
