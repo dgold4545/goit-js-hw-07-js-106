@@ -1,14 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+li {
+  list-style: none;
+}
+#categories {
+  width: 392px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+#categories .item {
+  padding: 16px;
+  background-color: #f6f6f6;
+}
+
+#categories .item ul {
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#categories .item h2 {
+  margin: 0 0 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+#categories .item li {
+  border: 1px solid #000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin: 100px auto 0;
+}
+
+.gallery li {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
