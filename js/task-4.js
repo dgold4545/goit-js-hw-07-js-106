@@ -36,7 +36,6 @@ refs.formElem.addEventListener("submit", cheakInputs);
 function cheakInputs(event) {
   event.preventDefault();
   const currentTarget = event.currentTarget;
-  console.dir(currentTarget);
 
   const inputsValue = {
     email: currentTarget.elements.email.value.trim(),
